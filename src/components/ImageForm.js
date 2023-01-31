@@ -1,15 +1,17 @@
+import { useState } from "react";
+
 function ImageForm() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
-    <form className="imageForm">
+    <form onSubmit={handleSubmit} className="imageForm">
       <div className="mb-3">
         <label htmlFor="imgSrc" className="form-label">
           Image url
         </label>
-        <input
-          type="src"
-          className="form-control"
-          id="exampleFormControlInput1"
-        />
+        <input type="src" className="form-control" />
       </div>
       <div className="mb-3">
         <label htmlFor="imgCaption" className="form-label">
@@ -21,6 +23,7 @@ function ImageForm() {
           rows="3"
         ></textarea>
       </div>
+      <button type="submit">Add image</button>
     </form>
   );
 }

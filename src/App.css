@@ -3,4 +3,19 @@
   bottom: 0;
   width: 100%;
   padding: 0 10%;
+  background-color: #cacaca;
+  z-index: -10;
+}
+
+.imageList {
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+  z-index: 10;
+}
+
+.imageList li {
+  position: relative;
+  display: inline-block;
+  width: 50vw;
 }
