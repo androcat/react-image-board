@@ -1,6 +1,6 @@
 function ImageForm() {
   return (
-    <form>
+    <form className="imageForm">
       <div className="mb-3">
         <label htmlFor="imgSrc" className="form-label">
           Image url

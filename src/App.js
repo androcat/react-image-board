@@ -4,7 +4,7 @@ import ImageForm from "./components/ImageForm";
 function App() {
   return (
     <main>
-      <ImageForm />
+      <ImageForm className="imageForm" />
     </main>
   );
 }
