@@ -8,6 +8,7 @@
 }
 
 .imageList {
+  position: relative;
   margin: 0 auto;
   text-align: center;
   list-style: none;
@@ -15,7 +16,6 @@
 }
 
 .imageList li {
-  position: relative;
   display: inline-block;
   width: 50vw;
 }
