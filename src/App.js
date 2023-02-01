@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./App.css";
+
 import ImageForm from "./components/ImageForm";
 import ImageList from "./components/ImageList";
+
 const INITIAL_IMG_CARDS = [
   {
     id: 1,
@@ -10,6 +13,8 @@ const INITIAL_IMG_CARDS = [
 ];
 
 function App() {
+  const [imgs, setImgs] = useState(INITIAL_IMG_CARDS);
+
   return (
     <main>
       <ImageForm />
